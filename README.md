@@ -35,4 +35,4 @@ classDiagram
     User --> "0..*" Feature
     User --> Card
     User --> "0..*" News
-```´´´
+```
