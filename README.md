@@ -7,6 +7,10 @@ Java RESTfuk API criada para o Santander Dev Week.
 classDiagram
     class User {
         - String name
+        - Account account
+        - Feature [] features
+        - Card card
+        - News [] news
     }
 
     class Account {
@@ -31,8 +35,8 @@ classDiagram
         - String description
     }
 
-    User --> Account
-    User --> "0..*" Feature
-    User --> Card
-    User --> "0..*" News
+    User *-- Account
+    User *-- Feature
+    User *-- Card
+    User *-- News
 ```
